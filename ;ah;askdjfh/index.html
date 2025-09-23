@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1680">
+    <title>ModernForm Architecture - Современная архитектура</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Фиксированный фон с сеткой -->
+    <div class="background-grid"></div>
+    
+    <!-- Header с асимметричной навигацией -->
+    <header class="main-header">
+        <div class="header-bg-shape"></div>
+        
+        <nav class="asymmetric-nav">
+            <div class="nav-left">
+                <div class="logo">
+                    <span class="logo-shape">△</span>
+                    ModernForm
+                </div>
+            </div>
+            
+            <div class="nav-center">
+                <a href="#projects" class="nav-link" data-number="01">Проекты</a>
+                <a href="#services" class="nav-link" data-number="02">Услуги</a>
+                <a href="#about" class="nav-link" data-number="03">О нас</a>
+                <a href="#contact" class="nav-link" data-number="04">Контакты</a>
+            </div>
+            
+            <div class="nav-right">
+                <button class="menu-hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero с диагональным разделителем -->
+    <section class="hero">
+        <div class="hero-diagonal" data-parallax="0.3"></div>
+        
+        <div class="hero-content">
+            <div class="hero-year">2024</div>
+            
+            <h1 class="hero-title">
+                <span class="title-line">Архитектура</span>
+                <span class="title-line">как искусство</span>
+                <span class="title-line">пространства</span>
+            </h1>
+            
+            <div class="hero-scroll">
+                <div class="scroll-line"></div>
+                <span>Scroll</span>
+            </div>
+        </div>
+        
+        <div class="hero-image" data-parallax="0.1">
+            <div class="image-frame">
+                <!-- Заглушка для hero изображения -->
+                <div class="image-placeholder hero-placeholder">
+                    <span>ModernForm Architecture</span>
+                    <span>1680 × 500px</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- О компании с табами -->
+    <section id="about" class="about">
+        <div class="section-header">
+            <span class="section-number">01</span>
+            <h2>Архитектурное бюро</h2>
+        </div>
+        
+        <div class="tabs-container">
+            <div class="tabs-nav">
+                <button class="tab-btn active" data-tab="philosophy">Философия</button>
+                <button class="tab-btn" data-tab="approach">Подход</button>
+                <button class="tab-btn" data-tab="history">История</button>
+            </div>
+            
+            <div class="tabs-content">
+                <div class="tab-pane active" id="philosophy">
+                    <p>Мы создаем архитектуру, которая говорит с пространством на языке чистых линий и идеальных пропорций.</p>
+                </div>
+                <div class="tab-pane" id="approach">
+                    <p>Индивидуальный подход к каждому проекту, внимание к деталям и глубокий анализ контекста.</p>
+                </div>
+                <div class="tab-pane" id="history">
+                    <p>Основано в 2010 году. За 14 лет реализовано более 200 проектов в 15 странах мира.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Портфолио проектов (масонная сетка) -->
+    <section id="projects" class="portfolio">
+        <div class="section-header">
+            <span class="section-number">02</span>
+            <h2>Избранные проекты</h2>
+        </div>
+        
+        <div class="portfolio-filters">
+            <button class="filter-btn active" data-filter="all">Все</button>
+            <button class="filter-btn" data-filter="residential">Жилые</button>
+            <button class="filter-btn" data-filter="commercial">Коммерческие</button>
+            <button class="filter-btn" data-filter="public">Общественные</button>
+        </div>
+        
+        <div class="masonry-grid">
+            <div class="masonry-item large" data-category="residential">
+                <div class="project-card">
+                    <div class="project-image">
+                        <!-- Заглушка для проекта 1 -->
+                        <div class="image-placeholder project-placeholder">
+                            <span>Жилой комплекс "Вертикаль"</span>
+                            <span>800 × 600px</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Жилой комплекс "Вертикаль"</h3>
+                        <span class="project-year">2023</span>
+                    </div>
+                    <div class="project-overlay">
+                        <button class="view-project">Смотреть проект</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="masonry-item small" data-category="commercial">
+                <div class="project-card">
+                    <div class="project-image">
+                        <!-- Заглушка для проекта 2 -->
+                        <div class="image-placeholder project-placeholder">
+                            <span>Офис "Кристалл"</span>
+                            <span>400 × 400px</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Офис "Кристалл"</h3>
+                        <span class="project-year">2023</span>
+                    </div>
+                    <div class="project-overlay">
+                        <button class="view-project">Смотреть проект</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="masonry-item medium" data-category="public">
+                <div class="project-card">
+                    <div class="project-image">
+                        <!-- Заглушка для проекта 3 -->
+                        <div class="image-placeholder project-placeholder">
+                            <span>Музей современного искусства</span>
+                            <span>600 × 400px</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Музей современного искусства</h3>
+                        <span class="project-year">2022</span>
+                    </div>
+                    <div class="project-overlay">
+                        <button class="view-project">Смотреть проект</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Дополнительные элементы портфолио -->
+            <div class="masonry-item small" data-category="residential">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder project-placeholder">
+                            <span>Частная вилла "Скай"</span>
+                            <span>400 × 400px</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Частная вилла "Скай"</h3>
+                        <span class="project-year">2023</span>
+                    </div>
+                    <div class="project-overlay">
+                        <button class="view-project">Смотреть проект</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="masonry-item medium" data-category="commercial">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder project-placeholder">
+                            <span>Бизнес-центр "Плаза"</span>
+                            <span>600 × 400px</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Бизнес-центр "Плаза"</h3>
+                        <span class="project-year">2022</span>
+                    </div>
+                    <div class="project-overlay">
+                        <button class="view-project">Смотреть проект</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="masonry-item large" data-category="public">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder project-placeholder">
+                            <span>Городская библиотека</span>
+                            <span>800 × 600px</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Городская библиотека</h3>
+                        <span class="project-year">2021</span>
+                    </div>
+                    <div class="project-overlay">
+                        <button class="view-project">Смотреть проект</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Услуги с иконками-геометрическими фигурами -->
+    <section id="services" class="services">
+        <div class="section-header">
+            <span class="section-number">03</span>
+            <h2>Наши услуги</h2>
+        </div>
+        
+        <div class="services-grid">
+            <div class="service-item">
+                <div class="service-icon hexagon">
+                    <span>01</span>
+                </div>
+                <h3>Архитектурное проектирование</h3>
+                <p>Полный цикл от концепции до реализации с учетом всех технических требований</p>
+            </div>
+            
+            <div class="service-item">
+                <div class="service-icon circle">
+                    <span>02</span>
+                </div>
+                <h3>Дизайн интерьеров</h3>
+                <p>Создание гармоничных пространств, отражающих философию бренда</p>
+            </div>
+            
+            <div class="service-item">
+                <div class="service-icon triangle">
+                    <span>03</span>
+                </div>
+                <h3>Ландшафтная архитектура</h3>
+                <p>Интеграция архитектуры в природную среду, создание экосистем</p>
+            </div>
+            
+            <div class="service-item">
+                <div class="service-icon rhombus">
+                    <span>04</span>
+                </div>
+                <h3>Генеральное планирование</h3>
+                <p>Разработка градостроительных концепций и мастер-планов</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Команда с hover-эффектами -->
+    <section class="team">
+        <div class="section-header">
+            <span class="section-number">04</span>
+            <h2>Команда</h2>
+        </div>
+        
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="member-photo">
+                    <!-- Заглушка для фото команды -->
+                    <div class="image-placeholder team-placeholder">
+                        <span>Анна Иванова</span>
+                        <span>Главный архитектор</span>
+                    </div>
+                    <div class="member-overlay">
+                        <div class="member-social">
+                            <a href="#">in</a>
+                            <a href="#">ig</a>
+                        </div>
+                    </div>
+                </div>
+                <h3>Анна Иванова</h3>
+                <p>Главный архитектор</p>
+            </div>
+            
+            <div class="team-member">
+                <div class="member-photo">
+                    <div class="image-placeholder team-placeholder">
+                        <span>Максим Петров</span>
+                        <span>Дизайнер интерьеров</span>
+                    </div>
+                    <div class="member-overlay">
+                        <div class="member-social">
+                            <a href="#">in</a>
+                            <a href="#">ig</a>
+                        </div>
+                    </div>
+                </div>
+                <h3>Максим Петров</h3>
+                <p>Дизайнер интерьеров</p>
+            </div>
+            
+            <div class="team-member">
+                <div class="member-photo">
+                    <div class="image-placeholder team-placeholder">
+                        <span>Елена Сидорова</span>
+                        <span>Ландшафтный архитектор</span>
+                    </div>
+                    <div class="member-overlay">
+                        <div class="member-social">
+                            <a href="#">in</a>
+                            <a href="#">ig</a>
+                        </div>
+                    </div>
+                </div>
+                <h3>Елена Сидорова</h3>
+                <p>Ландшафтный архитектор</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты с интерактивной картой -->
+    <section id="contact" class="contact">
+        <div class="section-header">
+            <span class="section-number">05</span>
+            <h2>Контакты</h2>
+        </div>
+        
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>Адрес</h3>
+                    <p>Москва, ул. Архитектурная, 15</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Телефон</h3>
+                    <p>+7 (495) 123-45-67</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Email</h3>
+                    <p>info@modernform.ru</p>
+                </div>
+            </div>
+            
+            <div class="contact-map">
+                <div class="map-container">
+                    <!-- Упрощенная версия карты -->
+                    <div class="simple-map">
+                        <div class="map-point moscow" data-city="moscow">
+                            <div class="point-dot"></div>
+                            <div class="point-info">
+                                <h4>Москва</h4>
+                                <span>12 проектов</span>
+                            </div>
+                        </div>
+                        <div class="map-point london" data-city="london">
+                            <div class="point-dot"></div>
+                            <div class="point-info">
+                                <h4>Лондон</h4>
+                                <span>8 проектов</span>
+                            </div>
+                        </div>
+                        <div class="map-point dubai" data-city="dubai">
+                            <div class="point-dot"></div>
+                            <div class="point-info">
+                                <h4>Дубай</h4>
+                                <span>5 проектов</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер с многоуровневой структурой -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo">
+                    <span class="logo-shape">△</span>
+                    ModernForm
+                </div>
+                <p>© 2024 ModernForm Architecture. Все права защищены.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Направления</h3>
+                <nav class="footer-nav">
+                    <a href="#">Архитектура</a>
+                    <a href="#">Интерьеры</a>
+                    <a href="#">Ландшафт</a>
+                </nav>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Соцсети</h3>
+                <div class="social-links">
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/parallax.js"></script>
+    <script src="js/portfolio.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
