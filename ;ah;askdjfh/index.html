@@ -4,15 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=1680">
     <title>ModernForm Architecture - Современная архитектура</title>
-    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Фиксированный фон с сеткой -->
-    <div class="background-grid"></div>
-    
-    <!-- Header с асимметричной навигацией -->
+
     <header class="main-header">
         <div class="header-bg-shape"></div>
         
@@ -31,17 +27,10 @@
                 <a href="#contact" class="nav-link" data-number="04">Контакты</a>
             </div>
             
-            <div class="nav-right">
-                <button class="menu-hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
+        
         </nav>
     </header>
 
-    <!-- Hero с диагональным разделителем -->
     <section class="hero">
         <div class="hero-diagonal" data-parallax="0.3"></div>
         
@@ -62,7 +51,7 @@
         
         <div class="hero-image" data-parallax="0.1">
             <div class="image-frame">
-                <!-- Заглушка для hero изображения -->
+
                 <div class="image-placeholder hero-placeholder">
                     <span>ModernForm Architecture</span>
                     <span>1680 × 500px</span>
@@ -71,7 +60,6 @@
         </div>
     </section>
 
-    <!-- О компании с табами -->
     <section id="about" class="about">
         <div class="section-header">
             <span class="section-number">01</span>
@@ -99,7 +87,6 @@
         </div>
     </section>
 
-    <!-- Портфолио проектов (масонная сетка) -->
     <section id="projects" class="portfolio">
         <div class="section-header">
             <span class="section-number">02</span>
@@ -117,7 +104,6 @@
             <div class="masonry-item large" data-category="residential">
                 <div class="project-card">
                     <div class="project-image">
-                        <!-- Заглушка для проекта 1 -->
                         <div class="image-placeholder project-placeholder">
                             <span>Жилой комплекс "Вертикаль"</span>
                             <span>800 × 600px</span>
@@ -136,7 +122,6 @@
             <div class="masonry-item small" data-category="commercial">
                 <div class="project-card">
                     <div class="project-image">
-                        <!-- Заглушка для проекта 2 -->
                         <div class="image-placeholder project-placeholder">
                             <span>Офис "Кристалл"</span>
                             <span>400 × 400px</span>
@@ -155,7 +140,6 @@
             <div class="masonry-item medium" data-category="public">
                 <div class="project-card">
                     <div class="project-image">
-                        <!-- Заглушка для проекта 3 -->
                         <div class="image-placeholder project-placeholder">
                             <span>Музей современного искусства</span>
                             <span>600 × 400px</span>
@@ -171,7 +155,6 @@
                 </div>
             </div>
 
-            <!-- Дополнительные элементы портфолио -->
             <div class="masonry-item small" data-category="residential">
                 <div class="project-card">
                     <div class="project-image">
@@ -228,7 +211,6 @@
         </div>
     </section>
 
-    <!-- Услуги с иконками-геометрическими фигурами -->
     <section id="services" class="services">
         <div class="section-header">
             <span class="section-number">03</span>
@@ -270,7 +252,6 @@
         </div>
     </section>
 
-    <!-- Команда с hover-эффектами -->
     <section class="team">
         <div class="section-header">
             <span class="section-number">04</span>
@@ -280,7 +261,7 @@
         <div class="team-grid">
             <div class="team-member">
                 <div class="member-photo">
-                    <!-- Заглушка для фото команды -->
+
                     <div class="image-placeholder team-placeholder">
                         <span>Анна Иванова</span>
                         <span>Главный архитектор</span>
@@ -332,7 +313,6 @@
         </div>
     </section>
 
-    <!-- Контакты с интерактивной картой -->
     <section id="contact" class="contact">
         <div class="section-header">
             <span class="section-number">05</span>
@@ -357,7 +337,6 @@
             
             <div class="contact-map">
                 <div class="map-container">
-                    <!-- Упрощенная версия карты -->
                     <div class="simple-map">
                         <div class="map-point moscow" data-city="moscow">
                             <div class="point-dot"></div>
@@ -386,7 +365,6 @@
         </div>
     </section>
 
-    <!-- Футер с многоуровневой структурой -->
     <footer class="main-footer">
         <div class="footer-content">
             <div class="footer-section">
@@ -416,10 +394,6 @@
             </div>
         </div>
     </footer>
-
-    <script src="js/parallax.js"></script>
-    <script src="js/portfolio.js"></script>
-    <script src="js/navigation.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
